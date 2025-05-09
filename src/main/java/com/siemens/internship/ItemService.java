@@ -28,10 +28,16 @@ public class ItemService {
     }
 
     public Optional<Item> findById(Long id) {
+        if (id == null) {
+            return Optional.empty();
+        }
         return itemRepository.findById(id);
     }
 
     public Item save(Item item) {
+        if (item == null) {
+            return null;
+        }
         return itemRepository.save(item);
     }
 

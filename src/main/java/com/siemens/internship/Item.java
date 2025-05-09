@@ -30,7 +30,7 @@ public class Item {
     @NotBlank(message = "Email can't be blank")
     @Pattern(
             regexp = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$",
-            message = "Invalid format for the email"
+            message = "Invalid format for the emailz"
     )
     private String email;
 
